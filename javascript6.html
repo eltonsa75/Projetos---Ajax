@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Interativa com ajax e PHP</title>
+
+	<script language="javascript">
+		function MostraTabela (cor) {
+			document.write("<table bgcolor=\"" + cor + "\" border=\"1\">");
+			document.write("<tr><td>");
+			if(cor=='blue')
+			document.write("O fundo desta tabela é azul!")
+		else if(cor == 'red')
+			document.write("O fundo desta tabela é vermelha!")
+			document.write("</td></tr>");
+			document.write("</table>");
+		}
+	</script>
+</head>
+<body>
+
+<p><a href="#" onClick="MostraTabela('blue');">Tabela Azul</a></p>
+<p><a href="#" onClick="MostraTabela('red');">Tabela Vermelha</a></p>
+</body>
+</html>
