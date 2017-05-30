@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Interativa com ajax e PHP</title>
+</head>
+<body>
+	
+	<script language="javascript">
+		function Quadrado(valor){
+			var q = valor*valor;
+			return q;
+		}	
+	document.write("O quadrado de 20 é " + Quadrado(20));
+	</script>
+
+	<br/>
+
+	<script language="javascript">
+		function Quadrado(){
+			var q = Quadrado.arguments[0] * Quadrado.arguments[0];
+			return q;
+		}
+		document.write("O quadrado de 50 é " + Quadrado(50));
+	</script>
+
+	<br/><br/>
+
+	<script language="javascript">
+		var multiplica = new Function('a','b','return a*b');
+		document.write("Multiplicando 10 por 5 obtemos " + multiplica(10,5));
+	</script>
+</body>
+</html>
