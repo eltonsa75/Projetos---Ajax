@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Interativa com Ajax e PHP</title>
+	<script language="javascript">
+		function Remover(){
+			obj = document.getElementById("itens");
+			while(obj.hasChildNodes() == true){
+				obj.removeChild(obj.childNodes[0]);
+			}
+		}
+	</script>
+</head>
+<body>
+<div id="itens">
+	<div id="i1">Item 1</div>
+	<div id="i2">Item 2</div>
+	<div id="i3">Item 3</div>
+</div>
+<a href="javascript:Remover();">Remover itens</a>
+</body>
+</html>
